@@ -1,4 +1,5 @@
 import './App.css';
+import env from "react-dotenv";
 
 function App() {
   return (
@@ -12,7 +13,6 @@ function App() {
         <a className="Nav-Links" href="https://github.com/ecpantalone">github </a>
       </h1>
       </header>
-      </div>
 
     </div>
   );

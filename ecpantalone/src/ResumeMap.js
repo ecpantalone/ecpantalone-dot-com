@@ -1,4 +1,5 @@
 import './App.css';
+import ReactMapGL from 'react-map-gl';
 
 function ResumeMap() {
   return (
