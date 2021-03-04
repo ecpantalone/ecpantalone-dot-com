@@ -21,7 +21,13 @@ const ResumeMap = () => {
         center: [-79.88, 40.440624],
         zoom: 11
       });
-
+      const chathamMarker = new mapboxgl.Marker({
+        draggable: false
+      })
+      .setLngLat([-79.9241, 40.4487])
+      .setPopup(new mapboxgl.Popup()
+      .setHTML("<h1 style={{ color: red}}> Chatham University </h1>"))
+      .addTo(map);
       map.on("load", () => {
         setMap(map);
         map.resize();
