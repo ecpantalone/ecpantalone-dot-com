@@ -5,8 +5,8 @@ function Resume() {
     <div className="Resume">
       <div className="Res-header">
       <h2>
-        <a className="Nav-Links" href="https://ecpantalone.com">Map | </a>
-        <a className="Nav-Links" href="https://ecpantalone.com/resume">PDF</a>
+        <ResumeMap />
+        <ResumeText />
       </h2>
       </div>
 

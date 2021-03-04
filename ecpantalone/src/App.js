@@ -1,5 +1,6 @@
 import './App.css';
 import env from "react-dotenv";
+import { Layout } from "./components";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
         <a className="Nav-Links" href="https://github.com/ecpantalone">github </a>
       </h1>
       </header>
-
+      <Layout />;
+      </div>
     </div>
   );
 }
