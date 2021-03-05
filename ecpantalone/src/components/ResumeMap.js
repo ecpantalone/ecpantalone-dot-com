@@ -21,13 +21,18 @@ const ResumeMap = () => {
         center: [-79.88, 40.440624],
         zoom: 11
       });
-      const chathamMarker = new mapboxgl.Marker({
-        draggable: false
-      })
-      .setLngLat([-79.9241, 40.4487])
-      .setPopup(new mapboxgl.Popup()
-      .setHTML("<h1 style={{ color: red}}> Chatham University </h1>"))
-      .addTo(map);
+      var chatham = [-79.9241, 40.4487]
+      var chathamPopup = new mapboxgl.Popup({ offset: 25 }).setText(
+        'Chatham University'
+        );
+      var el = document.createElement('div');
+      el.id = 'marker';
+
+      new mapboxgl.Marker(el)
+        .setLngLat(chatham)
+        .setPopup(chathamPopup)
+        .addTo(map);
+
       map.on("load", () => {
         setMap(map);
         map.resize();
