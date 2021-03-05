@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
+// import pins from "../mapstuff/pins";
+// import cards from "../mapstuff/cards/";
 
 const styles = {
   width: "100vw",
